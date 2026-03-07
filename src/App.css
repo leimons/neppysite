@@ -1,0 +1,68 @@
+/* Proxima Nova */
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/src/assets/fonts/ProximaSansRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/src/assets/fonts/ProximaSansMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/src/assets/fonts/ProximaSansBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Radwave */
+
+@font-face {
+  font-family: "Radwave";
+  src: url("/src/assets/fonts/RadwaveFont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-image: url("/bgbgbg.png");
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: 100% auto;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Radwave", sans-serif;
+}
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbcd88;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6b96f;
+}
