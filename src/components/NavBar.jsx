@@ -1,5 +1,3 @@
-import dance from "../assets/dance.gif";
-
 export default function Navbar() {
   const links = ["home", "services", "terms", "contact"];
 
