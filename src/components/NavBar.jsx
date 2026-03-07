@@ -18,7 +18,7 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="navbar-center hidden md:flex flex-1 justify-center gap-2">
-            {["art and graphic design", ...links].map((id) => (
+            {[...links].map((id) => (
               <a
                 key={id}
                 href={`#${id}`}
