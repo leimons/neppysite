@@ -30,6 +30,15 @@
   font-style: normal;
 }
 
+/* src/App.css */
+
+@font-face {
+  font-family: "Futura";
+  src: url("./assets/fonts/FuturaMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body {
   overflow-x: hidden;
@@ -37,7 +46,7 @@ body {
   background-repeat: repeat-y;
   background-position: top center;
   background-size: 100% auto;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 h1,

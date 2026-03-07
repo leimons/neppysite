@@ -226,7 +226,7 @@ export default function Services() {
                   <tbody>
                     {activeService.pricing.map((row, i) => (
                       <tr key={i} className="border-b border-base-300">
-                        <td className="py-4 text-md font-proxima  text-black">
+                        <td className="py-4 text-md font-futura text-black">
                           {row.label}
                         </td>
                         <td className="py-4 text-md text-right font-black text-primary">
@@ -255,7 +255,7 @@ export default function Services() {
                   <tbody>
                     {activeService.pricing.map((row, i) => (
                       <tr key={i} className="border-b border-base-300">
-                        <td className="py-4 text-md font-proxima text-black">
+                        <td className="py-4 text-md font-futura text-black">
                           {row.label}
                         </td>
                         <td className="py-4 text-right font-black text-primary">

@@ -8,6 +8,7 @@ export default {
         sans: ["Proxima Nova", "sans-serif"],
         proxima: ["Proxima Nova", "sans-serif"],
         radwave: ["Radwave", "sans-serif"],
+        futura: ["Futura", "sans-serif"],
       },
     },
   },
