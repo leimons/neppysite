@@ -61,6 +61,7 @@ export default function Terms() {
             Generally, a 30-50% deposit will be made only after initial
             sketch.{" "}
           </li>
+          <li> I will only be sending the final high quality </li>
 
           <li>
             {" "}
