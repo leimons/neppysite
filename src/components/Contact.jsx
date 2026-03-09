@@ -18,36 +18,55 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1, duration: 0.6 }}
-        className="bg-[#e5d6ca]  border border-base-300 rounded-3xl p-8 shadow-md"
+        className="bg-[#e5d6ca] border border-base-300 rounded-3xl p-8 shadow-md"
       >
-        <p className="text-center text-neutral mb-8">commherehruehriuehiurw</p>
+        <p className="text-center text-neutral mb-8">
+          Replace this text with your contact info message.
+        </p>
 
-        <div className="grid gap-6 sm:grid-cols-3 ">
-          <ContactCard label="Discord" value="nepo" note="Preferred" />
-          <ContactCard label="Twitch" value="nepo" />
-          <ContactCard label="Commission Status" value="Open / Ask" />
+        <div className="grid gap-6 sm:grid-cols-3">
+          <ContactCard
+            label="Discord"
+            value="@jemichuu"
+            note="Preferred"
+            link="https://discord.com/users/168009093112528896"
+          />
+
+          <ContactCard
+            label="Twitch"
+            value="@neppyleppy"
+            link="https://twitch.tv/neppyleppy"
+          />
+
+          <ContactCard
+            label="Commission Status"
+            value="Open / Ask"
+            link="https://neppyleppy.vercel.app"
+          />
         </div>
       </motion.div>
     </section>
   );
 }
 
-function ContactCard({ label, value, note }) {
+function ContactCard({ label, value, note, link }) {
   return (
-    <motion.div
-      whileHover={{ y: -4 }}
-      transition={{ type: "spring", stiffness: 200 }}
-      className="rounded-2xl bg-[#e7ded7] border border-base-300 p-5"
-    >
-      <div className="flex items-center justify-between mb-1">
-        <span className="font-semibold text-neutral">{label}</span>
-        {note && (
-          <span className="text-xs px-2 py-0.5 rounded-full bg-secondary text-neutral font-semibold">
-            {note}
-          </span>
-        )}
-      </div>
-      <p className="text-sm text-neutral/80 break-all">{value}</p>
-    </motion.div>
+    <a href={link} target="_blank" rel="noopener noreferrer" className="block">
+      <motion.div
+        whileHover={{ y: -4 }}
+        transition={{ type: "spring", stiffness: 200 }}
+        className="rounded-2xl bg-[#e7ded7] border border-base-300 p-5 cursor-pointer"
+      >
+        <div className="flex items-center justify-between mb-1">
+          <span className="font-semibold text-neutral">{label}</span>
+          {note && (
+            <span className="text-xs px-2 py-0.5 rounded-full bg-secondary text-neutral font-semibold">
+              {note}
+            </span>
+          )}
+        </div>
+        <p className="text-sm text-neutral/80 break-all">{value}</p>
+      </motion.div>
+    </a>
   );
 }

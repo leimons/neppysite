@@ -148,10 +148,10 @@ export default function Services() {
           <button
             key={service.title}
             onClick={() => handleServiceChange(service)}
-            className={`px-6 py-2 rounded-xl  text-sm bg-primary font-semibold transition
+            className={`px-6 py-2 rounded-xl text-sm bg-primary font-semibold transition
               ${
                 activeService.title === service.title
-                  ? "bg-primary text-base-100 border-primary"
+                  ? "bg-secondary text-accent"
                   : "bg-base-200 border-base-300 hover:bg-[#e5d6ca]"
               }`}
           >
