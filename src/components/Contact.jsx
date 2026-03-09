@@ -20,7 +20,11 @@ export default function Contact() {
         transition={{ delay: 0.1, duration: 0.6 }}
         className="bg-[#e5d6ca] border border-base-300 rounded-3xl p-8 shadow-md"
       >
-        {<p className="text-center text-neutral mb-8"></p>}
+        {
+          <p className="text-center text-neutral mb-8">
+            Commission Status : OPEN
+          </p>
+        }
 
         <div className="grid gap-6 sm:grid-cols-3">
           <ContactCard
@@ -37,9 +41,9 @@ export default function Contact() {
           />
 
           <ContactCard
-            label="Commission Status : OPEN"
-            value="You can also contact me at jemmiechuu@gmail.com !"
-            link="https://neppyleppy.vercel.app"
+            label="X / Twitter"
+            value="@jemmyleppy"
+            link="https://x.com/jemmyleppy"
           />
         </div>
       </motion.div>
