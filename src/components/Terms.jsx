@@ -61,7 +61,7 @@ export default function Terms() {
             Generally, a 30-50% deposit will be made only after initial
             sketch.{" "}
           </li>
-          <li> I will only be sending the final high quality </li>
+          <li> I will only be sending the final high quality output.</li>
 
           <li>
             {" "}
@@ -73,7 +73,7 @@ export default function Terms() {
         <Section title="Process & Revisions" />
         <ul className="list-disc text-xl pl-8 space-y-1 text-accent w-full">
           {" "}
-          <li> 2 major revisions for free. </li>
+          <li> Client is entitled to 2 major revisions for free. </li>
           <li>
             {" "}
             An additional $5 per major revision will be charged after the free
@@ -81,7 +81,7 @@ export default function Terms() {
           </li>
           <li>
             {" "}
-            Minor revisions don't count (i.e. my mistakes, turning off certain
+            Minor revisions don't count. (i.e. my mistakes, turning off certain
             layers){" "}
           </li>
           <li>
@@ -113,8 +113,8 @@ export default function Terms() {
           </li>
           <li>
             {" "}
-            Bigger projects may have a different definition of rush. Please let
-            me know!{" "}
+            Bigger projects may have a different timeframe to be considered as a
+            rush order. Please let me know!{" "}
           </li>
         </ul>
       </motion.div>

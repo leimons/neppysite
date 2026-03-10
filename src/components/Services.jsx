@@ -3,6 +3,28 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import SDM1 from "../assets/SDM1.png";
+import SE1 from "../assets/SE1.png";
+import SE2 from "../assets/SE2.png";
+import SE3 from "../assets/SE3.png";
+import SE4 from "../assets/SE4.gif";
+import SE5 from "../assets/SE5.gif";
+import SPP1 from "../assets/SPP1.png";
+import SPT1 from "../assets/SPT1.png";
+import SVT1 from "../assets/SVT1.png";
+import SNL1 from "../assets/SNL1.png";
+import SIL1 from "../assets/SIL1.png";
+import SOL1 from "../assets/SOL1.gif";
+import SOL2 from "../assets/SOL2.png";
+
+const profilePics = [SPP1];
+const deskmats = [SDM1];
+const emotes = [SE1, SE2, SE3, SE4, SE5];
+const vpTubers = [SPT1, SVT1];
+const nameLogos = [SNL1];
+const illust = [SIL1];
+const overlays = [SOL1, SOL2];
+
 const services = [
   {
     title: "Name Logos",
@@ -14,7 +36,7 @@ const services = [
       { label: "Simplified Logo + Detailed Name Logo Bundle", price: "$45" },
       { label: "Commercial Use", price: "+50%" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: nameLogos,
   },
   {
     title: "Profile Pictures",
@@ -24,7 +46,7 @@ const services = [
       { label: "Basic", price: "$15" },
       { label: "Detailed", price: "$25" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: profilePics,
   },
   {
     title: "Overlays",
@@ -42,7 +64,8 @@ const services = [
     ],
     details: {
       title: "Overlay Bundle",
-      description: "Includes: ",
+      description:
+        "(Rates are cheaper for same scene animations/static with only text changes.)",
       list: [
         "Starting Soon Scene",
         "Just Chatting Scene",
@@ -51,7 +74,7 @@ const services = [
       ],
     },
 
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: overlays,
   },
   {
     title: "Deskmats",
@@ -62,17 +85,19 @@ const services = [
       { label: "Detailed", price: "$50" },
       { label: "Commercial", price: "+100%" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: deskmats,
   },
   {
     title: "PNGtubers / VTubers",
     subtitle: "(Prices are in USD)",
     columns: 2,
     pricing: [
-      { label: "Static Open and Close", price: "$35" },
-      { label: "VTube Model (Art Only)", price: "$120" },
+      { label: "PNG Chibi Open and Close", price: "$35" },
+      { label: "PNG Half Body Open and Close", price: "$50" },
+      { label: "VTuber Half Body Model (Art Only)", price: "$120" },
+      { label: "VTuber Full Body Model (Art Only)", price: "$170" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: vpTubers,
   },
   {
     title: "Emotes",
@@ -84,7 +109,7 @@ const services = [
       { label: "Bundle of 3", static: "$50", animated: "$80" },
       { label: "Bundle of 6", static: "$110", animated: "$170" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: emotes,
   },
   {
     title: "Illustrations",
@@ -97,7 +122,7 @@ const services = [
       { label: "Half Body - Base Colors", price: "$30" },
       { label: "Half Body - Detailed", price: "$50" },
     ],
-    images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
+    images: illust,
   },
 ];
 
@@ -172,7 +197,6 @@ export default function Services() {
             transition={{ duration: 0.25 }}
             className="grid md:grid-cols-2 gap-10"
           >
-            {/* LEFT 50% IMAGES */}
             <div className="flex flex-col gap-6">
               <div className="aspect-square bg-base-300 rounded-2xl overflow-hidden">
                 {activeImage && (
@@ -184,12 +208,17 @@ export default function Services() {
                 )}
               </div>
 
-              <div className="flex gap-4">
-                {activeService.images?.slice(1, 4).map((img) => (
+              <div className="grid grid-cols-5 gap-2 w-fit mx-auto">
+                {activeService.images?.map((img) => (
                   <button
                     key={img}
                     onClick={() => setActiveImage(img)}
-                    className="w-20 h-20 rounded-xl overflow-hidden border border-base-300 hover:scale-105 transition"
+                    className={`w-10 sm:w-12 md:w-14 aspect-square rounded-lg overflow-hidden border transition-all duration-200
+        ${
+          activeImage === img
+            ? "border-secondary scale-105 shadow"
+            : "border-base-300 hover:scale-110"
+        } ${activeImage === img ? "opacity-100" : "opacity-80 hover:opacity-100"}`}
                   >
                     <img
                       src={img}
@@ -199,6 +228,8 @@ export default function Services() {
                   </button>
                 ))}
               </div>
+
+              {/* hello */}
             </div>
 
             {/* RIGHT 50% CONTENT */}
