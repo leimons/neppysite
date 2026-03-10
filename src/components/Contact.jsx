@@ -22,7 +22,7 @@ export default function Contact() {
       >
         {
           <p className="text-center text-neutral mb-8">
-            Commission Status : OPEN
+            Commission Status : <u>OPEN</u>
           </p>
         }
 
