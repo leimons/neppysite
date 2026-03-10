@@ -9,8 +9,9 @@ const services = [
     subtitle: "(Prices are in USD)",
     columns: 2,
     pricing: [
-      { label: "Basic", price: "$20" },
+      { label: "Simplified Logo", price: "$20" },
       { label: "Detailed", price: "$30" },
+      { label: "Simplified Logo + Detailed Name Logo Bundle", price: "$45" },
       { label: "Commercial Use", price: "+50%" },
     ],
     images: ["/img1.png", "/img2.png", "/img3.png", "/img4.png"],
