@@ -24,6 +24,7 @@ export default function Contact() {
           <p className="text-center text-neutral mb-8">
             Commission Status : <u>OPEN</u>
           </p>
+          <p> Reach me thru my email: jemmiechuu@gmail.com </p>
         }
 
         <div className="grid gap-6 sm:grid-cols-3">
