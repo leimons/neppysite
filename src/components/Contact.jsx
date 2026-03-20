@@ -22,11 +22,17 @@ export default function Contact() {
       >
         {
           <p className="text-center text-neutral mb-8">
-            Commission Status : <u>OPEN</u>
+            Commission Status : <u>OPEN</u> | Reach me thru my email:{" "}
+            <a
+              className="underline hover:text-primary"
+              href="mailto:jemmiechuu@gmail.com?subject=Commission Inquiry"
+            >
+              jemmiechuu@gmail.com
+            </a>
           </p>
         }
 
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-4">
           <ContactCard
             label="Discord"
             value="@jemichuu"
@@ -44,6 +50,11 @@ export default function Contact() {
             label="X / Twitter"
             value="@jemmyleppy"
             link="https://x.com/jemmyleppy"
+          />
+          <ContactCard
+            label="VGen"
+            value="@neppyleppy"
+            link="https://vgen.co/neppyleppy"
           />
         </div>
       </motion.div>

@@ -105,9 +105,11 @@ const services = [
     columns: 3,
     pricing: [
       { label: "YCH", static: "$20", animated: "$30" },
+      { label: "YCH - Bundle of 3", static: "$50", animated: "$80" },
+      { label: "YCH - Bundle of 6", static: "$110", animated: "$170" },
       { label: "Custom", static: "$25", animated: "$35" },
-      { label: "Bundle of 3", static: "$50", animated: "$80" },
-      { label: "Bundle of 6", static: "$110", animated: "$170" },
+      { label: "Custom - Bundle of 3", static: "$65", animated: "$95" },
+      { label: "Custom - Bundle of 6", static: "$140", animated: "$200" },
     ],
     images: emotes,
   },

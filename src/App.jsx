@@ -4,7 +4,6 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Carousel from "./components/Carousel";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Terms from "./components/Terms";
